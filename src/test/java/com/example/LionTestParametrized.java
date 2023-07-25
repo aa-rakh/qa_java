@@ -1,14 +1,16 @@
 package com.example;
 
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-    @RunWith(Parameterized.class)
-    public class LionTestParametrized extends TestCase {
+
+import static org.junit.Assert.assertEquals;
+
+@RunWith(Parameterized.class)
+    public class LionTestParametrized {
 
         @Mock
         Feline feline;

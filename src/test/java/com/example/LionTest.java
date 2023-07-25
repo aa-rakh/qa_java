@@ -1,6 +1,5 @@
 package com.example;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -9,8 +8,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(MockitoJUnitRunner.class)
-public class LionTest extends TestCase {
+public class LionTest {
 
     @Mock
     Feline feline;
@@ -33,9 +34,6 @@ public class LionTest extends TestCase {
     @Test(expected = Exception.class)
     public void incorrectValueTestException() throws Exception {
         Lion lion = new Lion("Любой", feline);
-        List<String> expectedResult = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(expectedResult, Exception.class);
-
     }
 
     @Test
