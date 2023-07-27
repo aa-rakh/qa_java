@@ -9,6 +9,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
@@ -27,7 +28,7 @@ public class LionTest {
     @Test
     public void doesHaveManeTest() throws Exception {
         Lion lion = new Lion("Самка", feline);
-        assertEquals(false, lion.doesHaveMane());
+        assertFalse(lion.doesHaveMane());
 
     }
 

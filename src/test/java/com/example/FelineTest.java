@@ -13,7 +13,6 @@ import static org.junit.Assert.*;
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
 
-    @Mock
     private Feline feline;
 
     @Test
@@ -33,12 +32,12 @@ public class FelineTest {
     @Test
     public void getKittensNoParamInvokeGetKittensWith1() {
         Feline feline = new Feline();
-        assertEquals(feline.getKittens(), 1);
+        assertEquals(1, feline.getKittens());
     }
 
     @Test
     public void getKittensWithParams() {
         Feline feline = new Feline();
-        assertEquals(feline.getKittens(3), 3);
+        assertEquals(3, feline.getKittens(3));
     }
 }
